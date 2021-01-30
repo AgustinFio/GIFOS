@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIFOS</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+<body>
+    <header>
+        <div class="top">
+        <div class="gifos">
+            <img src="assets/logo-desktop.svg" alt="GIFOS" class="logo" id="logo">
+        </div>
+        <div class="header" id="header">
+            <div class="head modo" ><input type="checkbox" id="checkbox"><label for="checkbox" class="text mode">MODO NOCTURNO</label></div>
+            <div class="head favoritos" id="favo"><h1 class="text f">FAVORITOS</h1></div>
+            <div class="head mis" id="misgifos"> <h1 class="text">MIS GIFOS</h1></div>
+            <div class="head add" id="add"><div class="crear"></div></div>
+        </div>
+        <div class="menu" onclick="myFunction()">
+        <div class="menubar"></div>
+        <div class="menubar"></div>
+        <div class="menubar"></div>
+        </div>
+        </div>
+    </header>
+
+        <div class="contenido">
+<div class="maincont" id="mainbox">
+    <div class="movil" id="mov"><h1 class="mov in">Inspírate, busca,<br> guarda, y crea los <br> mejores GIFOS</h1></div>
+<div class="cont up"><h1 class="insp in">Inspírate, busca, guarda, y crea<br> los mejores GIFOS</h1></div>
+<div class="cont mid" id="mid"><img src="assets/ilustra_header.svg" alt="header" class="ilustra">
+    <div id="medio">
+    <input type="text" placeholder="Busca GIFOS y mas" id="search" class="search">
+    <div id="lupita" class="lupita"></div></div>
+    
+ </div>
+<div class="cont" id="und">
+    <h1 class="trend">Trending:</h1>
+    <p class="tipos" id="taglist"></p>
+</div>
+<div class="searchtext" id="searchtext"></div>
+<div class="gifcont">
+   
+</div>
+<div class="modall" id="modalWindow"></div>
+<div class="vermas" id="vermas"> </div>
+
+
+        
+    
+    <div id="container">
+        <div class="trending" id="tendencia">
+            <h1 class="tr">Trending GIFOS</h1>
+            <p class="mira" id="mira">Mira los últimos <br class="gi"> GIFOS de nuestra comunidad.</p>
+        </div>
+        <div class="imag">
+            <div class="cuadra uno">
+             <button id="atras"></button>
+            </div>
+            <div id="imn"></div>
+            <div class="cuadra dos"><button id="bot"></button></div>
+   
+    
+        </div>
+    </div>
+</div>
+<section class="hidden" id="creategifosec">
+    <div id="center">
+        <div class="camara"><img src="assets/camara.svg" alt="camara"></div>
+        <div class="luz"><img src="assets/element-luz-camara.svg" alt="luz"></div>
+        <div class="selfie">
+            <div id="preview_overlay">Estamos subiendo tu gifo</div>
+            <video id="video"></video>
+            <img src="#" alt="previsualizar" id="previsualizar" class="ocultar">
+<div class="createtext">
+            <h1 class="h1text">Aqui podras crear tus propios <span class="greentext">GIFOS</span></h1>
+            <h3 class="h3text">Crea tu GIFO en tan solo 3 pasos!<br>(Solo necesitas una camara para grabar un video)</h3>
+        </div>
+        </div>
+    </div>
+    <div class="numb">
+    <div class="number">
+        <div class="num one" id="step_one">1</div>
+        <div class="num two" id="step_two">2</div>
+        <div class="num three" id="step_three">3</div>
+    </div>
+    <div class="violeta">
+        
+    </div>
+    <button class="boton" id="botoncomenzar">COMENZAR</button>
+    <button class="boton ocultar" id="botongrabar">GRABAR</button>
+    <button class="boton ocultar" id="botonfinalizar">FINALIZAR</button>
+    <button class="boton ocultar" id="botonsubir">SUBIR</button>
+    <div class="asset">       
+        <img src="assets/pelicula.svg" alt="pelicula" class="pelicula">    
+    </div>
+    <div class="repeat ocultar" id="repetir" >REPETIR CAPTURA</div>
+        <div class="reloj" id="reloj"></div>
+        <div class="createnew ocultar" id="createnew">CREAR NUEVO</div>
+    </div>
+</section>
+    
+<footer>
+    <div id="foot">
+        <div class="izq">
+            <p class="comp">Compartir en:</p>
+            <img src="assets/icon_facebook.svg" alt="facebook" class="icon">
+            <img src="assets/icon-twitter-hover.svg" alt="twitter" class="icon">
+            <img src="assets/icon_instagram.svg" alt="instagram" class="icon">
+        </div>
+        <div class="right"><p class="copyright">© GIFOS 2020 All Rights Reserved.</p></div>
+    </div>
+    <div id="foots">
+        <div class="izq">
+            <p class="comp">Compartir en:</p>
+        </div>
+        <div class="icons">
+            <img src="assets/icon_facebook.svg" alt="facebook" class="icon">
+            <img src="assets/icon-twitter-hover.svg" alt="twitter" class="icon">
+            <img src="assets/icon_instagram.svg" alt="instagram" class="icon">
+        </div>
+        <div class="right"><p class="copyright">© GIFOS 2020 All Rights Reserved.</p></div>
+    </div>
+</footer> 
+</div>
+<script src="js/index.js"></script>
+<script src="js/crear.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/RecordRTC/5.5.8/RecordRTC.js"></script>
+</body>
+</html>
